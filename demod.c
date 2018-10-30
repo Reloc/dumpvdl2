@@ -25,6 +25,7 @@
 #include <string.h>		// memset
 #include <sys/time.h>		// gettimeofday
 #include <pthread.h>		// pthread_barrier_wait
+#include "pthread_barrier.h"	// pthread_barrier_wait for macosx
 #include "chebyshev.h"		// chebyshev_lpf_init
 #include "dumpvdl2.h"
 

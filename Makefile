@@ -57,6 +57,7 @@ OBJ =	acars.o \
 	icao.o \
 	idrp.o \
 	output.o \
+	pthread_barrier.o \
 	rs.o \
 	dumpvdl2.o \
 	tlv.o \
@@ -120,7 +121,7 @@ cpdlc.o: dumpvdl2.h asn1-util.h cpdlc.h asn1-format-cpdlc.h
 
 decode.o: dumpvdl2.h avlc.h
 
-demod.o: dumpvdl2.h chebyshev.h
+demod.o: dumpvdl2.h chebyshev.h pthread_barrier.h
 
 bitstream.o: dumpvdl2.h
 
@@ -134,7 +135,7 @@ idrp.o: dumpvdl2.h idrp.h tlv.h
 
 rs.o: dumpvdl2.h fec.h
 
-dumpvdl2.o: dumpvdl2.h avlc.h rtl.h mirisdr.h sdrplay.h
+dumpvdl2.o: dumpvdl2.h avlc.h rtl.h mirisdr.h pthread_barrier.h sdrplay.h
 
 avlc.o: dumpvdl2.h avlc.h xid.h acars.h x25.h
 
@@ -145,6 +146,8 @@ mirisdr.o: dumpvdl2.h mirisdr.h
 sdrplay.o: dumpvdl2.h sdrplay.h
 
 output.o: dumpvdl2.h
+
+pthread_barrier.o: pthread_barrier.h
 
 rtl.o: dumpvdl2.h rtl.h
 

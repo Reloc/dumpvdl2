@@ -24,6 +24,7 @@
 #include <stdint.h>
 #include <sys/time.h>
 #include <pthread.h>		// pthread_t, pthread_barrier_t
+#include "pthread_barrier.h"	// pthread_barrier for macosx
 #include "tlv.h"
 
 #ifndef DUMPVDL2_VERSION

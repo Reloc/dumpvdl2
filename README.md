@@ -660,6 +660,8 @@ Contains code from the following software projects:
 
 - asn1c, (c) 2003-2017 by Lev Walkin and contributors
 
+- DarwinPthreadBarrier, (c) 2015, Aleksey Demakov
+
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or

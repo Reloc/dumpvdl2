@@ -33,6 +33,7 @@
 #if WITH_SDRPLAY
 #include "sdrplay.h"
 #endif
+#include "pthread_barrier.h"	// pthread_barrier for macosx
 #include "dumpvdl2.h"
 #include "avlc.h"		// parse_avlc_frames
 
