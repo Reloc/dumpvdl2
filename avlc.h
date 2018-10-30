@@ -19,7 +19,11 @@
 #ifndef _AVLC_H
 #define _AVLC_H 1
 #include <stdint.h>
+#ifdef __APPLE__
+#include <machine/endian.h>
+#else
 #include <endian.h>		// __BYTE_ORDER
+#endif
 #include <sys/time.h>		// struct timeval
 #include <glib.h>		// GAsyncQueue
 

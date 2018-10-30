@@ -17,7 +17,11 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include <stdint.h>
-#include <endian.h>
+#ifdef __APPLE__
+#include <machine/endian.h>
+#else
+#include <endian.h>		// __BYTE_ORDER__
+#endif
 #include "tlv.h"
 
 #define ESIS_HDR_LEN		9

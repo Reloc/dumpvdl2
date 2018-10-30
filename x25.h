@@ -18,7 +18,11 @@
  */
 #ifndef _X25_H
 #define _X25_H
+#ifdef __APPLE__
+#include <machine/endian.h>
+#else
 #include <endian.h>
+#endif
 #include <stdint.h>
 #include "tlv.h"
 #define X25_MIN_LEN		3
